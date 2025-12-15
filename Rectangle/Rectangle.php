@@ -1,6 +1,6 @@
 <?php
-// rectangle.php
-class rectangle {
+// Rectangle.php
+class Rectangle {
     private float $length;
     private float $width;
 

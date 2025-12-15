@@ -2,9 +2,9 @@
 // class.php
 
 // Подключение классов
-require_once 'car.php';
-require_once 'rectangle.php';
-require_once 'animals.php';
+require_once('Сar/Car.php');
+require_once('Rectangle/Rectangle.php');
+require_once ('Animal/Animal.php');
 
 while (true) {
     echo "Выберите действие:\n";
@@ -19,7 +19,7 @@ while (true) {
     switch ($choice) {
         case '1':
             // Работа с классом Car
-            $car = new car("BMW", "X5", 2020, 50000);
+            $car = new Car("BMW", "X5", 2020, 50000);
             echo $car->getInfo() . "\n";
             echo "Введите расстояние для поездки (км): ";
             $distance = intval(trim(fgets(STDIN)));
@@ -27,13 +27,13 @@ while (true) {
             echo "Обновленный пробег: " . $car->getMileage() . " км\n";
             break;
         case '2':
-            // Работа с классом rectangle
+            // Работа с классом Rectangle
             try {
                 echo "Введите длину прямоугольника: ";
                 $length = floatval(trim(fgets(STDIN)));
                 echo "Введите ширину прямоугольника: ";
                 $width = floatval(trim(fgets(STDIN)));
-                $rect = new rectangle($length, $width);
+                $rect = new Rectangle($length, $width);
                 echo "Площадь: " . $rect->getArea() . "\n";
                 echo "Периметр: " . $rect->getPerimeter() . "\n";
             } catch (InvalidArgumentException $e) {
@@ -41,7 +41,7 @@ while (true) {
             }
             break;
         case '3':
-            // Работа с классами animals, Dog, Cat, Zoo
+            // Работа с классами Animal, Dog, Cat, Zoo
             $dog1 = new Dog("Бенни", 3, "Лабрадор");
             $dog2 = new Dog("Лаки", 5, "Бульдог");
             $cat1 = new Cat("Мурка", 2, "Серый");

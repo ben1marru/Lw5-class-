@@ -1,6 +1,6 @@
 <?php
-// animals.php
-abstract class animals {
+// Animal.php
+abstract class Animal {
     protected string $name;
     protected int $age;
     protected string $species;
@@ -20,7 +20,7 @@ abstract class animals {
     }
 }
 
-class Dog extends animals {
+class Dog extends Animal {
     private string $breed;
 
     public function __construct(string $name, int $age, string $breed) {
@@ -33,7 +33,7 @@ class Dog extends animals {
     }
 }
 
-class Cat extends animals {
+class Cat extends Animal {
     private string $color;
 
     public function __construct(string $name, int $age, string $color) {
@@ -49,7 +49,7 @@ class Cat extends animals {
 class Zoo {
     private array $animals = [];
 
-    public function addAnimal(animals $animal): void {
+    public function addAnimal(Animal $animal): void {
         $this->animals[] = $animal;
     }
 

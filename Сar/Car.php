@@ -1,6 +1,6 @@
 <?php
-// car.php
-class car {
+// Car.php
+class Car {
     private string $brand;
     private string $model;
     private int $year;
