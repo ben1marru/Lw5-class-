@@ -1,0 +1,23 @@
+<?php
+namespace MyApp;
+
+class Dog extends Animal
+{
+    private $breed;
+
+    public function __construct(string $name, int $age, string $breed)
+    {
+        parent::__construct($name, $age, 'Собака');
+        $this->breed = $breed;
+    }
+
+    public function makeSound(): void
+    {
+        echo "Гав-гав!\n";
+    }
+
+    public function getBreed(): string
+    {
+        return $this->breed;
+    }
+}
