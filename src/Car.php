@@ -3,10 +3,10 @@ namespace MyApp;
 
 class Car
 {
-    private $make;      // марка
-    private $model;     // модель
-    private $year;      // год выпуска
-    private $mileage;   // пробег
+    private string $make;      // марка
+    private string $model;     // модель
+    private int $year;         // год выпуска
+    private int $mileage;      // пробег
 
     public function __construct(string $make, string $model, int $year, int $mileage)
     {
@@ -33,3 +33,4 @@ class Car
         return $this->mileage;
     }
 }
+?>

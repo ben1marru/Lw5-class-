@@ -3,9 +3,9 @@ namespace MyApp;
 
 class Animal
 {
-    protected $name;
-    protected $age;
-    protected $species;
+    protected string $name;
+    protected int $age;
+    protected string $species;
 
     public function __construct(string $name, int $age, string $species)
     {

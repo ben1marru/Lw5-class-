@@ -3,7 +3,7 @@ namespace MyApp;
 
 class Dog extends Animal
 {
-    private $breed;
+    private string $breed;
 
     public function __construct(string $name, int $age, string $breed)
     {

@@ -3,8 +3,8 @@ namespace MyApp;
 
 class Rectangle
 {
-    private $length;
-    private $width;
+    private float $length;
+    private float $width;
 
     public function __construct(float $length, float $width)
     {
@@ -25,3 +25,4 @@ class Rectangle
         return 2 * ($this->length + $this->width);
     }
 }
+?>

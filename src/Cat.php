@@ -3,7 +3,7 @@ namespace MyApp;
 
 class Cat extends Animal
 {
-    private $color;
+    private string $color;
 
     public function __construct(string $name, int $age, string $color)
     {

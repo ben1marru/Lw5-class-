@@ -3,7 +3,7 @@ namespace MyApp;
 
 class Zoo
 {
-    private $animals = [];
+    private array $animals = [];
 
     public function addAnimal(Animal $animal): void
     {
