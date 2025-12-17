@@ -1,4 +1,5 @@
 <?php
+
 namespace MyApp;
 
 class Dog extends Animal

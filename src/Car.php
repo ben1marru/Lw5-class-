@@ -1,4 +1,5 @@
 <?php
+
 namespace MyApp;
 
 class Car
@@ -33,4 +34,3 @@ class Car
         return $this->mileage;
     }
 }
-?>

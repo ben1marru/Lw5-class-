@@ -1,4 +1,5 @@
 <?php
+
 namespace MyApp;
 
 class Rectangle
@@ -25,4 +26,3 @@ class Rectangle
         return 2 * ($this->length + $this->width);
     }
 }
-?>
